@@ -4,7 +4,9 @@
 class Enemy
 {
 public:
-	Enemy();
-	void spawnerEnemy(sf::RenderWindow& window);
+	sf::Color color;
+	sf::ConvexShape enemy;
+	Enemy(sf::ConvexShape, sf::Color);
+	void draw(sf::RenderWindow& window) const;
 };
 

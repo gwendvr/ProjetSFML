@@ -11,7 +11,7 @@ sf::RenderWindow window(sf::VideoMode(390, 650), "SFML Window");
 
 int main()
 {
-    Enemy enemy;
+    Enemy enemy(sf::ConvexShape(3), sf::Color::Red);
     Map map;
     Player player("name", sf::Color::Blue, sf::CircleShape(20));
     
@@ -26,7 +26,7 @@ int main()
 
         window.clear();
         map.loadMap(window);
-        enemy.spawnerEnemy(window);
+        enemy.draw(window);
         player.draw(window);
         window.display();
     }
