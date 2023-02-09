@@ -4,6 +4,7 @@
 #include <ctime>
 #include "Map.h"
 #include "Enemy.h"
+#include "Player.h"
 
 
 sf::RenderWindow window(sf::VideoMode(390, 650), "SFML Window");
@@ -12,7 +13,8 @@ int main()
 {
     Enemy enemy;
     Map map;
-
+    Player player("name", sf::Color::Blue, sf::CircleShape(20));
+    
     while (window.isOpen())
     {
         sf::Event event;
@@ -25,6 +27,7 @@ int main()
         window.clear();
         map.loadMap(window);
         enemy.spawnerEnemy(window);
+        player.draw(window);
         window.display();
     }
 
