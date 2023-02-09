@@ -7,17 +7,10 @@ Map::Map() {
 }
 
 void Map::loadMap(sf::RenderWindow& window) {
-    std::vector<sf::VertexArray> lines1;
-    std::vector<sf::Vector2f> speeds1;
-    std::vector<sf::VertexArray> lines2;
-    std::vector<sf::Vector2f> speeds2;
-    std::vector<sf::VertexArray> lines3;
-    std::vector<sf::Vector2f> speeds3;
+
     srand(time(NULL));
 
-    float speed = 3;
-    sf::Clock clock;
-    int spawnCounter = 0;
+
 
     sf::RectangleShape background(sf::Vector2f(390, 650));
     sf::CircleShape coin(10);
@@ -42,6 +35,11 @@ void Map::loadMap(sf::RenderWindow& window) {
     sectionLines[3].color = sf::Color::White;
 
     window.draw(sectionLines);
+
+
+}
+
+void Map::moveRectangle(sf::RenderWindow& window) {
 
     sf::Time elapsed = clock.getElapsedTime();
     if (elapsed.asSeconds() >= 0.2f)
@@ -114,6 +112,9 @@ void Map::loadMap(sf::RenderWindow& window) {
             i--;
         }
     }
+}
+
+void Map::drawMap(sf::RenderWindow & window) {
 
     for (auto line : lines1)
         window.draw(line);

@@ -71,28 +71,28 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\gwend\Documents\SFML-2.5.1\include</IncludePath>
-    <LibraryPath>C:\Users\gwend\Documents\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
-    <PublicIncludeDirectories>C:\Users\gwend\Documents\SFML-2.5.1\include</PublicIncludeDirectories>
+    <IncludePath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\gwend\Documents\SFML-2.5.1\include</IncludePath>
+    <LibraryPath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;C:\Users\gwend\Documents\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
     <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\gwend\Documents\SFML-2.5.1\include</IncludePath>
-    <LibraryPath>C:\Users\gwend\Documents\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
-    <PublicIncludeDirectories>C:\Users\gwend\Documents\SFML-2.5.1\include</PublicIncludeDirectories>
+    <IncludePath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\gwend\Documents\SFML-2.5.1\include</IncludePath>
+    <LibraryPath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;C:\Users\gwend\Documents\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
     <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
-    <LibraryPath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
-    <PublicIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</PublicIncludeDirectories>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\alexis.borteyru\Downloads\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</IncludePath>
+    <LibraryPath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <IncludePath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\alexis.borteyru\Downloads\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
-    <LibraryPath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
-    <PublicIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</PublicIncludeDirectories>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\alexis.borteyru\Downloads\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</IncludePath>
+    <LibraryPath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <IncludePath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\alexis.borteyru\Downloads\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -100,7 +100,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -117,7 +117,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,7 +134,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\damie\Documents\SFML\Addons\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;C:\Users\damie\Documents\SFML\Addons\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,7 +151,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\damie\Documents\SFML\Addons\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;C:\Users\damie\Documents\SFML\Addons\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
