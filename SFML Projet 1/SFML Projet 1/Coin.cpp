@@ -8,5 +8,4 @@ void coinSpawner() {
     coin.setOutlineThickness(3);
     coin.setOutlineColor(sf::Color(233, 173, 3));
     coin.setPosition(170, 150);
-
 }

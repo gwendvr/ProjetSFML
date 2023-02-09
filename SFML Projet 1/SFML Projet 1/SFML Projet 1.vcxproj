@@ -71,15 +71,15 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\alexis.borteyru\Downloads\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</IncludePath>
-    <LibraryPath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
-    <PublicIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</PublicIncludeDirectories>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\gwend\Documents\SFML-2.5.1\include</IncludePath>
+    <LibraryPath>C:\Users\gwend\Documents\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>C:\Users\gwend\Documents\SFML-2.5.1\include</PublicIncludeDirectories>
     <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\alexis.borteyru\Downloads\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</IncludePath>
-    <LibraryPath>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
-    <PublicIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</PublicIncludeDirectories>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\gwend\Documents\SFML-2.5.1\include</IncludePath>
+    <LibraryPath>C:\Users\gwend\Documents\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>C:\Users\gwend\Documents\SFML-2.5.1\include</PublicIncludeDirectories>
     <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -134,7 +134,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\gwend\Documents\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,7 +151,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\alexis.borteyru\Desktop\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\gwend\Documents\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -164,10 +164,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Coin.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Map.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Map.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
