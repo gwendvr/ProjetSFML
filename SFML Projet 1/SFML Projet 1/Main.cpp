@@ -25,9 +25,11 @@ int main()
         }
 
         window.clear();
+
         map.loadMap(window);
         enemy.draw(window);
         player.draw(window);
+
         window.display();
     }
 
