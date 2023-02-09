@@ -1,12 +1,12 @@
-#include <SFML/Graphics.hpp>
-#include <vector>
-#include <cstdlib>
+#include "map.h"
 #include <ctime>
+#include <cstdlib>
 
+Map::Map() {
+    srand(time(NULL));
+}
 
-void loadMap() {
-    sf::RenderWindow window(sf::VideoMode(390, 650), "SFML Window");
-
+void Map::loadMap(sf::RenderWindow& window) {
     std::vector<sf::VertexArray> lines1;
     std::vector<sf::Vector2f> speeds1;
     std::vector<sf::VertexArray> lines2;
@@ -26,6 +26,14 @@ void loadMap() {
     coin.setOutlineThickness(3);
     coin.setOutlineColor(sf::Color(233, 173, 3));
     coin.setPosition(170, 150);
+    //enemy
+    sf::ConvexShape Enemy;
+    Enemy.setPointCount(3);
+    Enemy.setPoint(0, sf::Vector2f(25.f, 50.f));
+    Enemy.setPoint(1, sf::Vector2f(0.f, 25.f));
+    Enemy.setPoint(2, sf::Vector2f(50.f, 25.f));
+    Enemy.setFillColor(sf::Color::Red);
+    Enemy.setPosition(50.f, 50.f);
 
 
     background.setFillColor(sf::Color(80, 80, 80));
@@ -132,8 +140,6 @@ void loadMap() {
             window.draw(line);
         for (auto line : lines3)
             window.draw(line);
-        window.draw(coin);
-
         window.display();
     }
 }

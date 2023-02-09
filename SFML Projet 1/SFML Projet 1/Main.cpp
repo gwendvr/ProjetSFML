@@ -4,9 +4,16 @@
 #include <ctime>
 #include "Map.h"
 
+
+sf::RenderWindow window(sf::VideoMode(390, 650), "SFML Window");
+
 int main()
 {
-    loadMap();
+
+
+    Map map;
+    map.loadMap(window);
+    coinSpawner();
+
     return 0;
 }
-
