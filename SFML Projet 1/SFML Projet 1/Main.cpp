@@ -4,6 +4,7 @@
 #include <ctime>
 #include "Map.h"
 #include "Enemy.h"
+#include "Coin.h"
 #include "Player.h"
 
 
@@ -12,10 +13,11 @@ sf::RenderWindow window(sf::VideoMode(390, 650), "SFML Window");
 int main()
 {
     Enemy enemy(sf::ConvexShape(3), sf::Color::Red);
+    Coin coin(sf::CircleShape(10), sf::Color::Red);
     Map map;
     Player player("name", sf::Color::Blue, sf::CircleShape(20));
-
     player.shape.setPosition(175, 550);
+
     bool canMove;
 
     while (window.isOpen())
@@ -46,13 +48,13 @@ int main()
         map.moveRectangle(window);
         map.drawMap(window);
         enemy.update(window);
-        enemy.draw(window);
+        enemy.draw(window);    
+        coin.update(window);
+        coin.draw(window);
         player.draw(window);
 
         window.display();
     }
-
-    coinSpawner();
 
     return 0;
 }
