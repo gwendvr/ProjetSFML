@@ -14,6 +14,7 @@ int main()
     Enemy enemy(sf::ConvexShape(3), sf::Color::Red);
     Map map;
     Player player("name", sf::Color::Blue, sf::CircleShape(20));
+
     player.shape.setPosition(175, 550);
     bool canMove;
 
