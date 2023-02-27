@@ -20,6 +20,9 @@ int main()
     Player player("name", sf::Color::Blue, sf::CircleShape(20));
     player.shape.setPosition(175, 550);
 
+    sf::FloatRect playerBounds = player.shape.getGlobalBounds();
+    sf::FloatRect enemyBounds = enemy.enemy.getGlobalBounds();
+
     bool canMove;
 
     while (window.isOpen())
@@ -44,6 +47,18 @@ int main()
             }
         }
 
+        // Mise à jour de la position du joueur
+        sf::FloatRect playerBounds = player.shape.getGlobalBounds();
+
+        // Mise à jour de la position de l'ennemi
+        enemy1.update(window);
+        sf::FloatRect enemyBounds = enemy1.enemy.getGlobalBounds();
+
+        if (playerBounds.intersects(enemyBounds)) {
+            // faire disparaître le cercle
+            player.shape.setFillColor(sf::Color::Transparent);
+        }
+
         window.clear();
 
         map.loadMap(window);
@@ -51,7 +66,6 @@ int main()
         map.drawMap(window);
         enemy.update(window);
         enemy.draw(window);
-        enemy1.update(window);
         enemy1.draw(window);
         coin.update(window);
         coin.draw(window);
