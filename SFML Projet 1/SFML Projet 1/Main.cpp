@@ -13,8 +13,10 @@ sf::RenderWindow window(sf::VideoMode(390, 650), "SFML Window");
 int main()
 {
     Enemy enemy(sf::ConvexShape(3), sf::Color::Red);
+    Enemy enemy1(sf::ConvexShape(3), sf::Color::Red);
     Coin coin(sf::CircleShape(10), sf::Color::Red);
     Map map;
+    enemy1.enemy.setPosition(160.f, 50.f);
     Player player("name", sf::Color::Blue, sf::CircleShape(20));
     player.shape.setPosition(175, 550);
 
@@ -48,7 +50,9 @@ int main()
         map.moveRectangle(window);
         map.drawMap(window);
         enemy.update(window);
-        enemy.draw(window);    
+        enemy.draw(window);
+        enemy1.update(window);
+        enemy1.draw(window);
         coin.update(window);
         coin.draw(window);
         player.draw(window);
