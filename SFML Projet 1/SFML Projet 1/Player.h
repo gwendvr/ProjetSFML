@@ -13,8 +13,9 @@ public:
 	Player(const string, sf::Color, sf::CircleShape);
 	Player();
 	~Player();
+	void moveLeft();
+	void moveRight();
 
 	void draw(sf::RenderWindow&) const;
-	
-};
 
+};

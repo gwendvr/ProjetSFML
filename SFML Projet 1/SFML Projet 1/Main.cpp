@@ -14,7 +14,8 @@ int main()
     Enemy enemy(sf::ConvexShape(3), sf::Color::Red);
     Map map;
     Player player("name", sf::Color::Blue, sf::CircleShape(20));
-    
+    bool canMove;
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -22,6 +23,19 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q) && canMove)
+            {
+                canMove = false;
+                player.moveLeft();
+            }
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && canMove)
+            {
+                canMove = false;
+                player.moveRight();
+            }
+            else {
+                canMove = true;
+            }
         }
 
         window.clear();
