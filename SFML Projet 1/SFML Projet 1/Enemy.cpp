@@ -9,6 +9,11 @@ Enemy::Enemy(sf::ConvexShape e, sf::Color c) : enemy(e), color(c) {
     enemy.setPosition(50.f, 50.f);
 }
 
+void Enemy::update(sf::RenderWindow& window)
+{
+    enemy.move(0.f, 0.12f);
+}
+
 void Enemy::draw(sf::RenderWindow& window) const
 {
     window.draw(enemy);

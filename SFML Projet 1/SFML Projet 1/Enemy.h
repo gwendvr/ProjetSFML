@@ -8,5 +8,6 @@ public:
 	sf::ConvexShape enemy;
 	Enemy(sf::ConvexShape, sf::Color);
 	void draw(sf::RenderWindow& window) const;
+	void update(sf::RenderWindow& window);
 };
 

@@ -29,6 +29,7 @@ int main()
         map.loadMap(window);
         map.moveRectangle(window);
         map.drawMap(window);
+        enemy.update(window);
         enemy.draw(window);
         player.draw(window);
 
